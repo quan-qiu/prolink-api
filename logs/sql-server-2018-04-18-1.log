@@ -1,0 +1,228 @@
+2018-04-18 11:40:19.041  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Info log
+2018-04-18 11:40:19.067  WARN Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Hey, This is a warning!
+2018-04-18 11:40:19.067 ERROR Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Oops! We have an Error. OK
+2018-04-18 11:40:19.067 FATAL Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Damn! Fatal error. Please fix me.
+2018-04-18 11:40:19.633  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Starting SqlserverApplication on Vtyc-Qiu-7460 with PID 5488 (D:\quan_qiu\spring-projects\sqlserver\target\classes started by tmc10427 in D:\quan_qiu\spring-projects\sqlserver)
+2018-04-18 11:40:19.634  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : No active profile set, falling back to default profiles: default
+2018-04-18 11:40:19.720  INFO Vtyc-Qiu-7460 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10aa41f2: startup date [Wed Apr 18 11:40:19 CST 2018]; root of context hierarchy
+2018-04-18 11:40:21.040  INFO Vtyc-Qiu-7460 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12e10681] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-18 11:40:22.248  INFO Vtyc-Qiu-7460 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9999 (http)
+2018-04-18 11:40:22.265  INFO Vtyc-Qiu-7460 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9999"]
+2018-04-18 11:40:22.277  INFO Vtyc-Qiu-7460 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-04-18 11:40:22.278  INFO Vtyc-Qiu-7460 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-18 11:40:22.297  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2018-04-18 11:40:22.298  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-04-18 11:40:22.298  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-04-18 11:40:23.357  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2018-04-18 11:40:24.003  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-04-18 11:40:24.003  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4298 ms
+2018-04-18 11:40:24.097  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-04-18 11:40:24.101  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-18 11:40:24.102  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-18 11:40:24.102  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-18 11:40:24.102  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-18 11:40:24.446  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:40:24.452  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:40:25.310  INFO Vtyc-Qiu-7460 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-18 11:40:25.427  INFO Vtyc-Qiu-7460 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-18 11:40:25.493  INFO Vtyc-Qiu-7460 --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-18 11:40:25.494  INFO Vtyc-Qiu-7460 --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2018-04-18 11:40:25.548  INFO Vtyc-Qiu-7460 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-18 11:40:25.668  INFO Vtyc-Qiu-7460 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2018-04-18 11:40:25.883  INFO Vtyc-Qiu-7460 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-18 11:40:25.936  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:40:25.937  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:40:26.177  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10aa41f2: startup date [Wed Apr 18 11:40:19 CST 2018]; root of context hierarchy
+2018-04-18 11:40:26.205  WARN Vtyc-Qiu-7460 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-18 11:40:26.271  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/api],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getAllApi()
+2018-04-18 11:40:26.274  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/pt/{id}],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.checkPartNum(java.lang.String)
+2018-04-18 11:40:26.274  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/count_pt],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getCountPt()
+2018-04-18 11:40:26.274  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/wc/{wc_id}],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getWorkcenterDesc(java.lang.String)
+2018-04-18 11:40:26.274  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/wc_wcd],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getAllWorkcenterWorkcenterDecs()
+2018-04-18 11:40:26.275  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/wcs],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getAllWorkcenters()
+2018-04-18 11:40:26.276  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/simpleemail]}" onto public java.lang.String com.vtyc.controller.QQEmailController.home()
+2018-04-18 11:40:26.276  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vtycemail]}" onto public java.lang.String com.vtyc.controller.VtycEmailController.home()
+2018-04-18 11:40:26.280  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-18 11:40:26.281  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-18 11:40:26.316  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 11:40:26.317  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 11:40:26.349  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 11:40:26.610  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-18 11:40:26.622  INFO Vtyc-Qiu-7460 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9999"]
+2018-04-18 11:40:26.629  INFO Vtyc-Qiu-7460 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-04-18 11:40:26.643  INFO Vtyc-Qiu-7460 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9999 (http) with context path ''
+2018-04-18 11:40:26.645  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Started SqlserverApplication in 7.447 seconds (JVM running for 12.014)
+2018-04-18 11:40:37.754  INFO Vtyc-Qiu-7460 --- [nio-9999-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-18 11:40:37.755  INFO Vtyc-Qiu-7460 --- [nio-9999-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-18 11:40:37.768  INFO Vtyc-Qiu-7460 --- [nio-9999-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-04-18 11:40:37.919 ERROR Vtyc-Qiu-7460 --- [nio-9999-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result size: expected 1, actual 2] with root cause
+org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result size: expected 1, actual 2
+	at org.springframework.dao.support.DataAccessUtils.nullableSingleResult(DataAccessUtils.java:100)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:772)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:792)
+	at com.vtyc.dao.CzWorkcenterDao.getWcDesc(CzWorkcenterDao.java:38)
+	at com.vtyc.dao.CzWorkcenterDao$$FastClassBySpringCGLIB$$81ae6080.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.vtyc.dao.CzWorkcenterDao$$EnhancerBySpringCGLIB$$4f2ae2e2.getWcDesc(<generated>)
+	at com.vtyc.controller.CzProlinkSQLController.getWorkcenterDesc(CzProlinkSQLController.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-18 11:43:46.037  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Info log
+2018-04-18 11:43:46.040  WARN Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Hey, This is a warning!
+2018-04-18 11:43:46.040 ERROR Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Oops! We have an Error. OK
+2018-04-18 11:43:46.040 FATAL Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Damn! Fatal error. Please fix me.
+2018-04-18 11:43:46.785  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Starting SqlserverApplication on Vtyc-Qiu-7460 with PID 4332 (D:\quan_qiu\spring-projects\sqlserver\target\classes started by tmc10427 in D:\quan_qiu\spring-projects\sqlserver)
+2018-04-18 11:43:46.785  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : No active profile set, falling back to default profiles: default
+2018-04-18 11:43:46.845  INFO Vtyc-Qiu-7460 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1757cd72: startup date [Wed Apr 18 11:43:46 CST 2018]; root of context hierarchy
+2018-04-18 11:43:48.349  INFO Vtyc-Qiu-7460 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b03470cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-18 11:43:48.716  INFO Vtyc-Qiu-7460 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9999 (http)
+2018-04-18 11:43:48.728  INFO Vtyc-Qiu-7460 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9999"]
+2018-04-18 11:43:48.735  INFO Vtyc-Qiu-7460 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-04-18 11:43:48.737  INFO Vtyc-Qiu-7460 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-04-18 11:43:48.742  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2018-04-18 11:43:48.743  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2018-04-18 11:43:48.743  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2018-04-18 11:43:49.766  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2018-04-18 11:43:49.832  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-04-18 11:43:49.833  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2992 ms
+2018-04-18 11:43:49.922  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-04-18 11:43:49.924  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-18 11:43:49.925  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-18 11:43:49.925  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-18 11:43:49.925  INFO Vtyc-Qiu-7460 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-18 11:43:49.996  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:43:50.000  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:43:50.494  INFO Vtyc-Qiu-7460 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-18 11:43:50.578  INFO Vtyc-Qiu-7460 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-18 11:43:50.622  INFO Vtyc-Qiu-7460 --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-18 11:43:50.623  INFO Vtyc-Qiu-7460 --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2018-04-18 11:43:50.648  INFO Vtyc-Qiu-7460 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-18 11:43:50.731  INFO Vtyc-Qiu-7460 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2018-04-18 11:43:50.891  INFO Vtyc-Qiu-7460 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-18 11:43:50.937  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:43:50.939  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:43:51.167  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1757cd72: startup date [Wed Apr 18 11:43:46 CST 2018]; root of context hierarchy
+2018-04-18 11:43:51.190  WARN Vtyc-Qiu-7460 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-18 11:43:51.260  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/wc_wcd],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getAllWorkcenterWorkcenterDecs()
+2018-04-18 11:43:51.261  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/wcs],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getAllWorkcenters()
+2018-04-18 11:43:51.262  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/wc/{wc_id}],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getWorkcenterDesc(java.lang.String)
+2018-04-18 11:43:51.263  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/count_pt],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getCountPt()
+2018-04-18 11:43:51.263  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/pt/{id}],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.checkPartNum(java.lang.String)
+2018-04-18 11:43:51.263  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/api],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getAllApi()
+2018-04-18 11:43:51.263  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/simpleemail]}" onto public java.lang.String com.vtyc.controller.QQEmailController.home()
+2018-04-18 11:43:51.264  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vtycemail]}" onto public java.lang.String com.vtyc.controller.VtycEmailController.home()
+2018-04-18 11:43:51.267  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-18 11:43:51.268  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-18 11:43:51.306  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 11:43:51.306  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 11:43:51.462  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 11:43:51.749  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-18 11:43:51.766  INFO Vtyc-Qiu-7460 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9999"]
+2018-04-18 11:43:51.778  INFO Vtyc-Qiu-7460 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2018-04-18 11:43:51.794  INFO Vtyc-Qiu-7460 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9999 (http) with context path ''
+2018-04-18 11:43:51.798  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplication                 : Started SqlserverApplication in 5.661 seconds (JVM running for 6.533)
+2018-04-18 11:44:13.920  INFO Vtyc-Qiu-7460 --- [nio-9999-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-18 11:44:13.920  INFO Vtyc-Qiu-7460 --- [nio-9999-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-18 11:44:13.935  INFO Vtyc-Qiu-7460 --- [nio-9999-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-04-18 11:44:38.300  INFO Vtyc-Qiu-7460 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.vtyc.SqlserverApplicationTests], using SpringBootContextLoader
+2018-04-18 11:44:38.313  INFO Vtyc-Qiu-7460 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.vtyc.SqlserverApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-04-18 11:44:38.315  INFO Vtyc-Qiu-7460 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.vtyc.SqlserverApplicationTests]: SqlserverApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-04-18 11:44:38.454  INFO Vtyc-Qiu-7460 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.vtyc.SqlserverApplication for test class com.vtyc.SqlserverApplicationTests
+2018-04-18 11:44:38.567  INFO Vtyc-Qiu-7460 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-04-18 11:44:38.594  INFO Vtyc-Qiu-7460 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1224144a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@29f7cefd, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@700fb871, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3b35a229, org.springframework.test.context.support.DirtiesContextTestExecutionListener@9816741, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e16c0aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@13d73f29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@565f390, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7dc3712, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f67a4d3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5e3f861, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2fb0623e]
+2018-04-18 11:44:38.997  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplicationTests            : Starting SqlserverApplicationTests on Vtyc-Qiu-7460 with PID 8036 (started by tmc10427 in D:\quan_qiu\spring-projects\sqlserver)
+2018-04-18 11:44:38.997  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplicationTests            : No active profile set, falling back to default profiles: default
+2018-04-18 11:44:39.072  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@20f5281c: startup date [Wed Apr 18 11:44:39 CST 2018]; root of context hierarchy
+2018-04-18 11:44:40.974  INFO Vtyc-Qiu-7460 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$884e9c75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-18 11:44:41.106  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:44:41.136  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:44:41.845  INFO Vtyc-Qiu-7460 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-18 11:44:41.864  INFO Vtyc-Qiu-7460 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-18 11:44:41.957  INFO Vtyc-Qiu-7460 --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.14.Final}
+2018-04-18 11:44:41.959  INFO Vtyc-Qiu-7460 --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2018-04-18 11:44:42.037  INFO Vtyc-Qiu-7460 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-18 11:44:42.260  INFO Vtyc-Qiu-7460 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2018-04-18 11:44:42.851  INFO Vtyc-Qiu-7460 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-18 11:44:42.963  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:44:42.968  INFO Vtyc-Qiu-7460 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2018-04-18 11:44:44.092  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@20f5281c: startup date [Wed Apr 18 11:44:39 CST 2018]; root of context hierarchy
+2018-04-18 11:44:44.175  WARN Vtyc-Qiu-7460 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-18 11:44:44.278  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/pt/{id}],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.checkPartNum(java.lang.String)
+2018-04-18 11:44:44.279  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/api],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getAllApi()
+2018-04-18 11:44:44.280  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/count_pt],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getCountPt()
+2018-04-18 11:44:44.281  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/wc/{wc_id}],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getWorkcenterDesc(java.lang.String)
+2018-04-18 11:44:44.281  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/wcs],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getAllWorkcenters()
+2018-04-18 11:44:44.282  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/CZ/wc_wcd],methods=[GET]}" onto public java.lang.String com.vtyc.controller.CzProlinkSQLController.getAllWorkcenterWorkcenterDecs()
+2018-04-18 11:44:44.284  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/simpleemail]}" onto public java.lang.String com.vtyc.controller.QQEmailController.home()
+2018-04-18 11:44:44.286  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vtycemail]}" onto public java.lang.String com.vtyc.controller.VtycEmailController.home()
+2018-04-18 11:44:44.295  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-18 11:44:44.296  INFO Vtyc-Qiu-7460 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-18 11:44:44.390  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 11:44:44.391  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 11:44:44.447  INFO Vtyc-Qiu-7460 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-18 11:44:44.854  INFO Vtyc-Qiu-7460 --- [           main] c.v.SqlserverApplicationTests            : Started SqlserverApplicationTests in 6.205 seconds (JVM running for 8.247)
+2018-04-18 11:44:45.112  INFO Vtyc-Qiu-7460 --- [       Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@20f5281c: startup date [Wed Apr 18 11:44:39 CST 2018]; root of context hierarchy
+2018-04-18 11:44:45.116  INFO Vtyc-Qiu-7460 --- [       Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
