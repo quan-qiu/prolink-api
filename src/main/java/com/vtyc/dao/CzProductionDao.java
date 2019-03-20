@@ -17,7 +17,20 @@ public class CzProductionDao {
     @Autowired
     JdbcTemplate jdbcPrimaryTemplate;
 
-    public SqlRowSet getDayShiftProduction(String workcenter, String s_date){
+    public SqlRowSet getProductionByDate(String s_date){
+
+        String sql = "select op_wo_op,op_emp,op_line,op_qty_comp,op_part,op_date,op_dept,op_time" +
+                " from op_hist" +
+                " where op_qty_comp>0 and op_date=?";
+
+        SqlRowSet production = jdbcPrimaryTemplate.queryForRowSet(sql,
+                new Object[] {s_date}
+        );
+
+        return production;
+    }
+
+    public SqlRowSet getDayShiftProductionBy2Shift(String workcenter, String s_date){
 
         String sql = "select op_wo_op,op_emp,op_line,cast(round(sum(op_qty_comp),0,1) as int) op_qty_comp,op_part,op_date,op_dept" +
                 " from op_hist" +
@@ -27,12 +40,12 @@ public class CzProductionDao {
 
         SqlRowSet production = jdbcPrimaryTemplate.queryForRowSet(sql,
                 new Object[] {workcenter, s_date}
-                );
+        );
 
         return production;
     }
 
-    public SqlRowSet getAllDayShiftProduction(String s_date){
+    public SqlRowSet getAllDayShiftProductionBy2Shift(String s_date){
 
         String sql = "select op_wo_op,op_emp,op_line,cast(round(sum(op_qty_comp),0,1) as int) op_qty_comp,op_part,op_date,op_dept" +
                 " from op_hist" +
@@ -47,7 +60,7 @@ public class CzProductionDao {
         return production;
     }
 
-    public SqlRowSet getNightShiftProduction(String workcenter, String s_date){
+    public SqlRowSet getNightShiftProductionBy2Shift(String workcenter, String s_date){
 
         String sql = " select op_wo_op,op_emp,op_line,cast(round(sum(op_qty_comp),0,1) as int) op_qty_comp,op_part,op_date,op_dept" +
                 " from op_hist" +
@@ -63,7 +76,7 @@ public class CzProductionDao {
         return production;
     }
 
-    public SqlRowSet getAllNightShiftProduction(String s_date){
+    public SqlRowSet getAllNightShiftProductionBy2Shift(String s_date){
 
         String sql = " select op_wo_op,op_emp,op_line,cast(round(sum(op_qty_comp),0,1) as int) op_qty_comp,op_part,op_date,op_dept" +
                 " from op_hist" +

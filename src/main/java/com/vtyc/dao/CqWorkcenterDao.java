@@ -40,16 +40,25 @@ public class CqWorkcenterDao {
 
 
     public String getWcDesc(String workcenter){
+        String sql_count = "select count(wc_desc) from wc_mstr where wc_wkctr=?";
         String sql = "select top 1 wc_desc from wc_mstr where wc_wkctr=?";
         String wc_desc = null;
 
         try {
-            Object o = jdbcSecondaryTemplate.queryForObject(
-                    sql,
+            Integer count = jdbcSecondaryTemplate.queryForObject(
+                    sql_count,
                     new Object[]{workcenter},
-                    String.class);
-            wc_desc = (String) o;
+                    Integer.class);
 
+            if (count > 0){
+                Object o = jdbcSecondaryTemplate.queryForObject(
+                        sql,
+                        new Object[]{workcenter},
+                        String.class);
+                wc_desc = (String) o;
+            }else {
+                logger.warn("----LOG----wc_desc: " + "workcenter: " + workcenter + " doesn't exist.");
+            }
         }catch (EmptyResultDataAccessException e){
             logger.warn("----LOG----wc_desc: " + "workcenter: " + workcenter + " doesn't exist.");
             e.printStackTrace();
@@ -62,7 +71,7 @@ public class CqWorkcenterDao {
         }
     }
 
-    public List<Workcenter> constcenterToWorkcenter(String costcenter){
+   public List<Workcenter> constcenterToWorkcenter(String costcenter){
         String sql = "select wc_wkctr,wc_desc from wc_mstr where wc_dept=? and wc_desc not like '%无此线%' order by wc_wkctr";
         List<Workcenter> workcenters = jdbcSecondaryTemplate.query(sql,new Object[]{costcenter},
                 new BeanPropertyRowMapper(Workcenter.class));

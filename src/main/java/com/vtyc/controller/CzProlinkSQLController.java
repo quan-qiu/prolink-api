@@ -167,7 +167,7 @@ public class CzProlinkSQLController {
         return result.toJSONString();
     }
 
-    @RequestMapping(value = "productionDay/{workcenter}/{s_date}", method = RequestMethod.GET)
+    @RequestMapping(value = "productionDayBy2Shift/{workcenter}/{s_date}", method = RequestMethod.GET)
     public String getProductionByDay(@PathVariable("workcenter") String workcenter,
                               @PathVariable("s_date") String s_date){
 
@@ -175,7 +175,7 @@ public class CzProlinkSQLController {
         JSONObject result = new JSONObject();
         JSONArray data = new JSONArray();
 
-        SqlRowSet workhour = czProductionDao.getDayShiftProduction(workcenter,s_date);
+        SqlRowSet workhour = czProductionDao.getDayShiftProductionBy2Shift(workcenter,s_date);
 
         while (workhour.next()) {
 
@@ -196,13 +196,42 @@ public class CzProlinkSQLController {
         return result.toJSONString();
     }
 
-    @RequestMapping(value = "productionDayAll/{s_date}", method = RequestMethod.GET)
+    @RequestMapping(value = "productionByDate/{s_date}", method = RequestMethod.GET)
+    public String getProductionByDate(@PathVariable("s_date") String s_date){
+        String status = "false";
+        JSONObject result = new JSONObject();
+        JSONArray data = new JSONArray();
+
+        SqlRowSet production = czProductionDao.getProductionByDate(s_date);
+
+        while (production.next()) {
+
+            JSONObject obj = new JSONObject();
+            obj.put("op_wo_op", production.getString("op_wo_op"));
+            obj.put("op_emp", production.getString("op_emp"));
+            obj.put("op_line", production.getString("op_line"));
+            obj.put("op_qty_comp", production.getString("op_qty_comp"));
+            obj.put("op_part", production.getString("op_part"));
+            obj.put("op_dept",  production.getString("op_dept"));
+            obj.put("op_date", production.getString("op_date"));
+            obj.put("op_time", production.getString("op_time"));
+
+            data.add(obj);
+            status = "true";
+        }
+
+        result.put("data", data);
+        result.put("status", status);
+        return result.toJSONString();
+    }
+
+    @RequestMapping(value = "productionDayAllBy2Shift/{s_date}", method = RequestMethod.GET)
     public String getProductionByDayAll(@PathVariable("s_date") String s_date){
         String status = "false";
         JSONObject result = new JSONObject();
         JSONArray data = new JSONArray();
 
-        SqlRowSet production = czProductionDao.getAllDayShiftProduction(s_date);
+        SqlRowSet production = czProductionDao.getAllDayShiftProductionBy2Shift(s_date);
 
         while (production.next()) {
 
@@ -224,7 +253,7 @@ public class CzProlinkSQLController {
         return result.toJSONString();
     }
 
-    @RequestMapping(value = "productionNight/{workcenter}/{s_date}", method = RequestMethod.GET)
+    @RequestMapping(value = "productionNightBy2Shift/{workcenter}/{s_date}", method = RequestMethod.GET)
     public String getProductionByNight(@PathVariable("workcenter") String workcenter,
                                         @PathVariable("s_date") String s_date){
 
@@ -232,7 +261,7 @@ public class CzProlinkSQLController {
         JSONObject result = new JSONObject();
         JSONArray data = new JSONArray();
 
-        SqlRowSet production = czProductionDao.getNightShiftProduction(workcenter,s_date);
+        SqlRowSet production = czProductionDao.getNightShiftProductionBy2Shift(workcenter,s_date);
 
         while (production.next()) {
 
@@ -254,13 +283,13 @@ public class CzProlinkSQLController {
         return result.toJSONString();
     }
 
-    @RequestMapping(value = "productionNightAll/{s_date}", method = RequestMethod.GET)
+    @RequestMapping(value = "productionNightAllBy2Shift/{s_date}", method = RequestMethod.GET)
     public String getProductionByNightAll(@PathVariable("s_date") String s_date){
         String status = "false";
         JSONObject result = new JSONObject();
         JSONArray data = new JSONArray();
 
-        SqlRowSet production = czProductionDao.getAllNightShiftProduction(s_date);
+        SqlRowSet production = czProductionDao.getAllNightShiftProductionBy2Shift(s_date);
 
         while (production.next()) {
 
