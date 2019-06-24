@@ -25,7 +25,7 @@ public class CzWorkcenterDao {
     public List<Workcenter> getAllWorkcenterWorkcenterDesc(){
 
         String sql = "select wc_wkctr,wc_desc from wc_mstr " +
-                " where upper(left(wc_wkctr,2))<>'CQ'" +
+                " where upper(left(wc_dept,2))<>'CQ' and wc_dept<>'' " +
                 " order by wc_wkctr";
         List<Workcenter> workcenters = jdbcPrimaryTemplate.query(sql,
                 new BeanPropertyRowMapper(Workcenter.class));

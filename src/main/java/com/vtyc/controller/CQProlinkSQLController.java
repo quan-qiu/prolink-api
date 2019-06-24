@@ -202,7 +202,6 @@ public class CQProlinkSQLController {
             obj.put("op_line", production.getString("op_line"));
             obj.put("op_qty_comp", production.getString("op_qty_comp"));
             obj.put("op_part", production.getString("op_part"));
-            obj.put("shift", "day");
             obj.put("op_dept",  production.getString("op_dept"));
             obj.put("op_date", production.getString("op_date"));
             obj.put("op_time", production.getString("op_time"));
